@@ -1,0 +1,115 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #fafafa, #f0f4ff);
+  color: #333;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+header {
+  background: linear-gradient(to right, #1c2e4a, #2a4b7c);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin-top: 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffd700;
+}
+.section {
+  padding: 70px 12%;
+  background: white;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+h2 {
+  text-align: center;
+  color: #1c2e4a;
+  margin-bottom: 25px;
+}
+blockquote {
+  font-style: italic;
+  color: #444;
+  border-left: 4px solid #c0a64b;
+  padding-left: 15px;
+  margin: 25px 0;
+}
+.song { margin-bottom: 40px; }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 30%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.gallery img:hover { transform: scale(1.03); }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 60%;
+  margin: 0 auto;
+}
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  background-color: #1c2e4a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover { background-color: #2a4b7c; }
+footer {
+  background-color: #1c2e4a;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+}
+.hidden { display: none; }
+#formMessage {
+  text-align: center;
+  color: #006400;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
